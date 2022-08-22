@@ -14,5 +14,5 @@ public interface IAsignadoService {
 	
 	public Asignado actualizarAsignado(Asignado asignado);
 	
-	public void eliminarAsignado(String dni);
+	public void eliminarAsignado(int dni);
 }

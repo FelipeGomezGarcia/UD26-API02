@@ -39,7 +39,7 @@ public class AsignadoServiceImpl implements IAsignadoService{
 	}
 
 	@Override
-	public void eliminarAsignado(String dni) {
+	public void eliminarAsignado(int dni) {
 		// TODO Auto-generated method stub
 		
 	}
