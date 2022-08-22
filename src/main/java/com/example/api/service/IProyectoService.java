@@ -8,7 +8,7 @@ public interface IProyectoService {
 	
 	public List<Proyecto> listarProyectos();
 	
-	public Proyecto guardarProyectos(Proyecto proyecto);
+	public Proyecto guardarProyecto(Proyecto proyecto);
 	
 	public Proyecto proyectoXID(String id);
 	

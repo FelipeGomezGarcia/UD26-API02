@@ -22,22 +22,22 @@ public class ProyectoController {
 	@Autowired
 	ProyectoServiceImpl proyectoServiceImpl;
 	
-	@GetMapping("/cientificos")
+	@GetMapping("/proyectos")
 	public List<Proyecto> listarProyectos(){
 		return proyectoServiceImpl.listarProyectos();
 	}
 	
-	@GetMapping("/cientificos/{id}")
+	@GetMapping("/proyectos/{id}")
 	public Proyecto proyectoXID(@PathVariable(name="id") String id) {
 		return proyectoServiceImpl.proyectoXID(id);
 	}
 	
-	@PostMapping("/cientificos")
+	@PostMapping("/proyectos")
 	public Proyecto guardarProyecto(@RequestBody Proyecto proyecto) {
-		return proyectoServiceImpl.guardarProyectos(proyecto);
+		return proyectoServiceImpl.guardarProyecto(proyecto);
 	}
 	
-	@PutMapping("/cientificos/{id}")
+	@PutMapping("/proyectos/{id}")
 	public Proyecto actualizarProyecto(@PathVariable(name="id")String id, @RequestBody Proyecto proyecto) {
 		Proyecto proyectoActualizado = proyectoServiceImpl.proyectoXID(id);
 		
@@ -47,7 +47,7 @@ public class ProyectoController {
 		return proyectoServiceImpl.actualizarProyecto(proyectoActualizado);
 	}
 	
-	@DeleteMapping("/cientificos/{id}")
+	@DeleteMapping("/proyectos/{id}")
 	public void eliminarProyecto (@PathVariable(name="id")String id) {
 		proyectoServiceImpl.eliminarProyecto(id);
 	}

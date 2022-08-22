@@ -21,7 +21,7 @@ public class ProyectoServiceImpl implements IProyectoService{
 	}
 
 	@Override
-	public Proyecto guardarProyectos(Proyecto proyecto) {
+	public Proyecto guardarProyecto(Proyecto proyecto) {
 		// TODO Auto-generated method stub
 		return iProyectoDAO.save(proyecto);
 	}
