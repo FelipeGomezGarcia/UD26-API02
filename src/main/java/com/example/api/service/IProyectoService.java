@@ -12,7 +12,7 @@ public interface IProyectoService {
 	
 	public Proyecto proyectoXID(String id);
 	
-	public Proyecto actualizarProyecto(String id, Proyecto proyecto);
+	public Proyecto actualizarProyecto(Proyecto proyecto);
 	
 	public void eliminarProyecto(String id);
 }

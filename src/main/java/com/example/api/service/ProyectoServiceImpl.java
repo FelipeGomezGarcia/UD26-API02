@@ -33,14 +33,9 @@ public class ProyectoServiceImpl implements IProyectoService{
 	}
 
 	@Override
-	public Proyecto actualizarProyecto(String id, Proyecto proyecto) {
-		// TODO Auto-generated method stub
-		Proyecto proyectoActualizado = iProyectoDAO.findById(id).get();
-		
-		proyectoActualizado.setNombre(proyecto.getNombre());
-		proyectoActualizado.setHoras(proyecto.getHoras());
-		
-		return iProyectoDAO.save(proyectoActualizado);
+	public Proyecto actualizarProyecto(Proyecto proyecto) {
+		// TODO Auto-generated method stub		
+		return iProyectoDAO.save(proyecto);
 	}
 
 	@Override

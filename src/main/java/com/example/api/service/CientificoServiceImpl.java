@@ -33,13 +33,9 @@ public class CientificoServiceImpl implements ICientificoService{
 	}
 
 	@Override
-	public Cientifico actualizarCientifico(String dni, Cientifico cientifico) {
-		// TODO Auto-generated method stub
-		Cientifico cientificoActualizado = iCientificoDAO.findById(dni).get();
-		
-		cientificoActualizado.setNombreApels(cientifico.getNombreApels());
-		
-		return iCientificoDAO.save(cientificoActualizado);
+	public Cientifico actualizarCientifico(Cientifico cientifico) {
+		// TODO Auto-generated method stub		
+		return iCientificoDAO.save(cientifico);
 	}
 
 	@Override

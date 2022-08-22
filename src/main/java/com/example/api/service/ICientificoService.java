@@ -12,7 +12,7 @@ public interface ICientificoService {
 	
 	public Cientifico cientificoXID(String dni);
 	
-	public Cientifico actualizarCientifico(String dni, Cientifico cientifico);
+	public Cientifico actualizarCientifico(Cientifico cientifico);
 	
 	public void eliminarCientifico(String dni);
 }

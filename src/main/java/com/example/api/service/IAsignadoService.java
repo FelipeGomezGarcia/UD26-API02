@@ -12,7 +12,7 @@ public interface IAsignadoService {
 	
 	public Asignado asignadoXID(int id);
 	
-	public Asignado actualizarAsignado(int id, Asignado asignado);
+	public Asignado actualizarAsignado(Asignado asignado);
 	
 	public void eliminarAsignado(String dni);
 }

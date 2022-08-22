@@ -33,14 +33,9 @@ public class AsignadoServiceImpl implements IAsignadoService{
 	}
 
 	@Override
-	public Asignado actualizarAsignado(int id, Asignado asignado) {
-		// TODO Auto-generated method stub
-		Asignado asignadoActualizado = iAsignadoDAO.findById(id).get();
-		
-		asignadoActualizado.setCientifico(asignado.getCientifico());
-		asignadoActualizado.setProyecto(asignado.getProyecto());
-		
-		return iAsignadoDAO.save(asignadoActualizado);
+	public Asignado actualizarAsignado(Asignado asignado) {
+		// TODO Auto-generated method stub		
+		return iAsignadoDAO.save(asignado);
 	}
 
 	@Override
