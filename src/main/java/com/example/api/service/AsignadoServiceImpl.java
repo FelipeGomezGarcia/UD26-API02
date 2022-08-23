@@ -39,8 +39,8 @@ public class AsignadoServiceImpl implements IAsignadoService{
 	}
 
 	@Override
-	public void eliminarAsignado(int dni) {
+	public void eliminarAsignado(int id) {
 		// TODO Auto-generated method stub
-		
+		iAsignadoDAO.deleteById(id);
 	}
 }
