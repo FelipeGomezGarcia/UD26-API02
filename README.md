@@ -1,8 +1,10 @@
 # UD26-API02
 
+Para utilizar los endpoint es necesario hacer login atraves del body a la siguiente URL. Esta te devolvera un token en los headers con el que podras hacer cualquier otra consulta.
+
 ## URL de la API
 
-https://ud2602.herokuapp.com/
+https://ud2702.herokuapp.com/login
 
 ### Endpoints de ASIGNADOS
 
